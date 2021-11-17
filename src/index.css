@@ -28,6 +28,7 @@ Styles view
 
 main {
   padding: 25px;
+  font-size: 1.5rem;
 }
 .search__box {
   width: 100%;
@@ -42,4 +43,60 @@ main {
   border: none;
   outline: none;
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 16px 16px;
+  margin-top: -25px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 2rem;
+  transition: 0.4s ease;
+}
+
+.search__box .search__bar:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/*
+========
+location
+========
+*/
+
+.location__box .location {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.location__box .date {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.5);
+}
+.weather__box {
+  text-align: center;
+}
+
+.weather__box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 10rem;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center; /*Check this pro*/
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather__box .weather {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
