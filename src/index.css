@@ -25,3 +25,21 @@ Styles view
   background-color: rgba(79, 116, 222, 0.8);
   min-height: 100vh;
 }
+
+main {
+  padding: 25px;
+}
+.search__box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+.search__box .search__bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
