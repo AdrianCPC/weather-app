@@ -22,7 +22,7 @@ Styles view
 */
 
 .app {
-  background-color: rgba(79, 116, 222, 0.8);
+  background-color: rgba(89, 99, 129, 0.8);
   min-height: 100vh;
 }
 
@@ -31,20 +31,23 @@ main {
   font-size: 1.5rem;
 }
 .search__box {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  align-items: center;
   margin: 0 0 75px;
 }
 .search__box .search__bar {
   display: block;
-  width: 100%;
+  width: 90%;
   padding: 15px;
   appearance: none;
   background: none;
   border: none;
   outline: none;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0 0 16px 16px;
-  margin-top: -25px;
+  border-radius: 20px;
+  margin-top: 5px;
   box-shadow: 0 5px rgba(0, 0, 0, 0.2);
   color: #313131;
   font-size: 2rem;
@@ -99,4 +102,42 @@ location
   font-size: 4rem;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  margin-top: 30px;
+}
+.weather__box .humidity {
+  color: rgb(255, 255, 255);
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.weather__box .pressure {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5)
+}
+
+/*
+==================
+Md--Medium
+==================
+*/
+@media(min-width: 600px) {
+  .search__box .search__bar {
+    width: 70%;
+  }
+}
+/*
+==================
+Lg--Large
+==================
+*/
+@media(min-width: 1024px) {
+  .search__box .search__bar {
+    width: 50%;
+  }
+  .weather__box .temp {
+    padding: 13px 20px;
+    font-size: 5rem;
+  }
 }
